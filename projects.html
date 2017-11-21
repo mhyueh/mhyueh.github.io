@@ -7,9 +7,28 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="MathJax/MathJax.js"></script>
+
 </head>
 
 <body>
+
+<noscript>
+<div style="color:#CC0000; text-align:center">
+<b>Warning: <a href="http://www.mathjax.org/">MathJax</a>
+requires JavaScript to process the mathematics on this page.<br />
+If your browser supports JavaScript, be sure it is enabled.</b>
+</div>
+<hr>
+</noscript>
+
 <div id="main">
 
 <div id="header">
@@ -27,8 +46,11 @@
 <div id="menu_items">
 <ul id="menu">
 <li><a href="cv.html">Curriculum Vitae</a></li>
+<li class="current"><a href="projects.html">Projects</a></li>
 <li><a href="publications.html">Publications</a></li>
-<li><a href="talks.html">Talks</a></li>
+<!--
+<li><a href="matlab.html">MATLAB</a></li>
+-->
 </ul>
 </div><!--close menu-->
 
@@ -66,22 +88,14 @@ E-mail: yueh at nctu.edu.tw
 <div class="content_item">
 
 <p>
-Mei-Heng Yueh received a Ph.D. degree in Applied Mathematics from National Chiao Tung University. His research mainly focuses on the theory and method of computational geometry. He has developed a system of effective and reliable energy optimization iterative methods for the computation of surface conformal and equiareal parameterizations. This technique has been successfully applied to 3D animation and medical image analysis.</p>
+<h1>Surface Parameterization</h1>
 
-<p>
-<h1>Office</h1>
-SA316, Science Building I
+A parameterization of a surface $\mathcal{M}$ is a bijective mapping $f$ that maps $\mathcal{M}$ onto a simply-shaped planar region $\mathcal{D}$. 
+Surface parameterizations have been widely applied to digital geometry processing tasks, such as surface registration, surface remeshing and surface texturing.
+
 </p>
 
-<p>
-<h1>Research Interests</h1> 	      
-<ul>
-<li>Computational Geometry</li>
-<li>Matrix Theory and Computations</li>
-<li>Numerical Analysis</li>
-<li>Laplacian Matrices of Graphs</li>
-</ul>
-</p>
+
 		
 		</div><!--close content_item-->
       
@@ -90,11 +104,11 @@ SA316, Science Building I
 	</div><!--close site_content--> 
   
   </div><!--close main-->
-
+  
 <div id="footer">
 <!--Copyright © Mei-Heng Yueh, All Rights Reserved.-->
 </div><!--close footer-->  
- 
+  
 </body>
 
 </html>
