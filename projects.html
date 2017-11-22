@@ -138,7 +138,7 @@ Then the smooth video in 3D is constructed via the cubic spline homotopy between
 </center>
 <br>
 <font size="4">
-The goal of 3D video compression is to use less quantity of the raw data of a 3D video to approximate the original 3D video. The 3D video, captured using the 3D scanner, contains 30 meshes together with texture images per second. Each mesh data is of size roughly $30$ megabytes. The cubic spline homotopy can be applied to reduce the size of the data we store while the resolution of mesh data is preserved. 
+The goal of 3D video compression is to use less quantity of the raw data of a 3D video to approximate the original 3D video. The 3D video, captured using the 3D scanner, contains 30 meshes together with texture images per second. Each mesh data is of size roughly 30 megabytes. The cubic spline homotopy can be applied to reduce the size of the data we store while the resolution of mesh data is preserved. 
 In practice, suppose a 3D video of a chewing-gum motion is captured. First, we pick 10% of the frames uniformly and compute the conformal mappings individually. Then, we use the cubic spline homotopy to reconstruct the missing frames between two consecutive frames to simulate the original video. Furthermore, we reconstruct each mesh with fewer points, which is denser only in the regions close to the facial landmarks. Note that the number of points of the reconstructed mesh is about 1/6 the number of points of the original mesh. As a result, we use only 1.6% of the original mesh data to reconstruct the whole video. 
 The demo video shows the original video of the chewing-gum motion (right) and the reconstructed video by the spline homotopy using 1.6% of the original data (left).
 </font>
