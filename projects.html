@@ -76,6 +76,9 @@ E-mail: yueh at nctu.edu.tw
 <a href="projects.html#Morphing">Surface Morphing</a><br>
 </li>
 <li>
+<a href="projects.html#Compression">3D Video Compression</a><br>
+</li>
+<li>
 <a href="projects.html#Texture">Texture Mapping</a><br>
 </li>
 <li>
@@ -103,7 +106,9 @@ E-mail: yueh at nctu.edu.tw
 </li>
 </ul>
 
-<br><br>
+<br>
+<hr>
+<br>
 
 <p>
 <a name="Morphing"></a>
@@ -119,7 +124,29 @@ With the suitable parameterizations, the registration problems between surfaces 
 Then the smooth video in 3D is constructed via the cubic spline homotopy between each pair of registration mappings. 
 </font>
 </p>
-<br><br>
+<br>
+<hr>
+<br>
+
+
+<p>
+<a name="Compression"></a>
+<h1>3D Video Compression</h1>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WrnYdbbpoTE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+<br>
+<font size="4">
+The goal of 3D video compression is to use less quantity of the raw data of a 3D video to approximate the original 3D video. The 3D video, captured using the 3D scanner, contains 30 meshes together with texture images per second. Each mesh data is of size roughly $30$ megabytes. The cubic spline homotopy can be applied to reduce the size of the data we store while the resolution of mesh data is preserved. 
+In practice, suppose a 3D video of a chewing-gum motion is captured. First, we pick 10% of the frames uniformly and compute the conformal mappings individually. Then, we use the cubic spline homotopy to reconstruct the missing frames between two consecutive frames to simulate the original video. Furthermore, we reconstruct each mesh with fewer points, which is denser only in the regions close to the facial landmarks. Note that the number of points of the reconstructed mesh is about 1/6 the number of points of the original mesh. As a result, we use only 1.6% of the original mesh data to reconstruct the whole video. 
+The demo video shows the original video of the chewing-gum motion (right) and the reconstructed video by the spline homotopy using 1.6% of the original data (left).
+</font>
+</p>
+<br>
+<hr>
+<br>
+
 
 <p>
 <a name="Texture"></a>
@@ -136,7 +163,9 @@ Texture mapping has been applied to movie industries, e.g., the famous movie, <i
 In the movie, actors and actress perform without heavy makeup. Instead, the texture mapping technique is applied to create a lifelike visual effect.
 </font>
 </p>
-<br><br>
+<br>
+<hr>
+<br>
 
 
 <p>
@@ -151,7 +180,9 @@ In the movie, actors and actress perform without heavy makeup. Instead, the text
 Due to the fact that each Chinese syllable is composed of 1 to 3 Mandarin phonetic symbols, a virtual broadcasting system can be realized via recording the videos of pronouncing all the 37 phonetic symbols and constructing the morphing sequences. 
 </font>
 </p>
-<br><br>
+<br>
+<hr>
+<br>
 
 
 <p>
@@ -167,7 +198,9 @@ Motion retargeting is aimed to use a sequence of motion in a 3D video to drive a
 The demo video of the motion retargeting on a human face in 3D shows a morphing sequence of the chewing-gum motion (left) and the motion retargeting on a target model (right).
 </font>
 </p>
-<br><br>
+<br>
+<hr>
+<br>
 
 
 <p>
@@ -185,8 +218,9 @@ With the efficient parameterization algorithms for genus zero closed surfaces, t
 Then the deformation from one brain to another can be visualized via the homotopy between the identity mapping and the registration mapping between two brains. 
 </font>
 </p>
-
-<br><br>
+<br>
+<hr>
+<br>
 
 <p>
 <a name="Intestine"></a>
@@ -203,8 +237,9 @@ In order to efficiently detect the polyps on the intestinal surface, an area-pre
 </font>
 <br>
 </p>
-
-<br><br>
+<br>
+<hr>
+<br>
 
 <p>
 <a name="Hippocampus"></a>
